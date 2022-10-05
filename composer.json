@@ -1,0 +1,78 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/moodle/moodle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/null/moodle-theme_contentmodifier.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/null/moodle-theme_h5peventsystem.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/null/moodle-theme_nos.git"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "adapta/modcustomfields",
+                "type": "moodle-local",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://gitlab.com/adapta/moodle-local_modcustomfields.git",
+                    "type": "git",
+                    "reference": "main"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "moodle-an-hochschulen/boost_union",
+                "type": "moodle-theme",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "moodle/moodle": "v4.*",
+        "adapta/modcustomfields": "dev-master",
+        "null/contentmodifier": "dev-master",
+        "null/h5peventsystem": "dev-master",
+        "null/nos": "dev-master"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.21"
+        },
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "installer-paths": {
+            "vendor/moodle/moodle/theme/{$name}": [
+                "type:moodle-theme"
+            ],
+            "vendor/moodle/moodle/local/{$name}": [
+                "type:moodle-local"
+            ]
+        }
+    }
+}

@@ -1,0 +1,409 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "55e57344693b8e3363edaad734ffbc85",
+    "packages": [
+        {
+            "name": "adapta/modcustomfields",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/adapta/moodle-local_modcustomfields.git",
+                "reference": "main"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "moodle-local"
+        },
+        {
+            "name": "composer/installers",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "894a0b5c5d34c88b69b097f2aae1439730fa6836"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/894a0b5c5d34c88b69b097f2aae1439730fa6836",
+                "reference": "894a0b5c5d34c88b69b097f2aae1439730fa6836",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
+                "symfony/process": "^2.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "plugin-modifies-install-path": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "pantheon",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "symfony",
+                "tastyigniter",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/1.x"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-03-15T21:23:54+00:00"
+        },
+        {
+            "name": "moodle-an-hochschulen/boost_union",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union",
+                "reference": "master"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "moodle-theme"
+        },
+        {
+            "name": "moodle/moodle",
+            "version": "v4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moodle/moodle.git",
+                "reference": "8febbe39733645a1aeb55f22d2adfb8d66dfc50d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moodle/moodle/zipball/8febbe39733645a1aeb55f22d2adfb8d66dfc50d",
+                "reference": "8febbe39733645a1aeb55f22d2adfb8d66dfc50d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "ext-hash": "*",
+                "ext-iconv": "*",
+                "ext-intl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "ext-pcre": "*",
+                "ext-simplexml": "*",
+                "ext-spl": "*",
+                "ext-xml": "*",
+                "ext-xmlreader": "*",
+                "ext-zip": "*",
+                "ext-zlib": "*",
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "behat/behat": "3.10.*",
+                "behat/mink": "~1.8",
+                "behat/mink-goutte-driver": "~1.2",
+                "friends-of-behat/mink-extension": "dev-master",
+                "mikey179/vfsstream": "^1.6",
+                "oleg-andreyev/mink-phpwebdriver": "^1.0",
+                "phpunit/phpunit": "9.5.*",
+                "symfony/process": "^4.0 || ^5.0"
+            },
+            "suggest": {
+                "ext-exif": "Enabling Exif PHP extension is recommended, it is used by Moodle to parse image meta data.",
+                "ext-mysqli": "Needed when Moodle uses MySQL or MariaDB database.",
+                "ext-oci8": "Needed when Moodle uses Oracle database.",
+                "ext-pgsql": "Needed when Moodle uses PostgreSQL database.",
+                "ext-soap": "Enabling SOAP PHP extension is useful for web services and some plugins.",
+                "ext-sodium": "Enabling Sodium PHP extension is recommended, it is used by Moodle encryption API.",
+                "ext-sqlsrv": "Needed when Moodle uses MS SQL Server database.",
+                "ext-tokenizer": "Enabling Tokenizer PHP extension is recommended, it improves Moodle Networking functionality.",
+                "ext-xmlrpc": "Enabling XMLRPC PHP extension is useful for web services and Moodle networking."
+            },
+            "type": "project",
+            "autoload-dev": {
+                "psr-0": {
+                    "Moodle\\BehatExtension": "lib/behat/extension/"
+                }
+            },
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "Moodle - the world's open source learning platform",
+            "homepage": "https://moodle.org",
+            "support": {
+                "source": "https://github.com/moodle/moodle/tree/v4.0.4"
+            },
+            "funding": [
+                {
+                    "type": "custom",
+                    "url": "https://moodle.com/donations/"
+                },
+                {
+                    "type": "custom",
+                    "url": "moodle.org"
+                }
+            ],
+            "time": "2022-09-10T10:15:57+00:00"
+        },
+        {
+            "name": "null/contentmodifier",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/null/moodle-theme_contentmodifier.git",
+                "reference": "b29b2cb140dcc7f2c0e0e17537aeb48f67475271"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/null/moodle-theme_contentmodifier/zipball/b29b2cb140dcc7f2c0e0e17537aeb48f67475271",
+                "reference": "b29b2cb140dcc7f2c0e0e17537aeb48f67475271",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "default-branch": true,
+            "type": "moodle-theme",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl"
+                }
+            ],
+            "description": "A theme that enables other themes or plugin to modify moodle's html-output.",
+            "keywords": [
+                "html",
+                "moodle",
+                "theme"
+            ],
+            "support": {
+                "source": "https://github.com/null/moodle-theme_contentmodifier/tree/master",
+                "issues": "https://github.com/null/moodle-theme_contentmodifier/issues"
+            },
+            "time": "2022-10-05T12:20:42+00:00"
+        },
+        {
+            "name": "null/h5peventsystem",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/null/moodle-theme_h5peventsystem.git",
+                "reference": "8c2afb4e578a616a289aa04f664d62aab95dbfe8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/null/moodle-theme_h5peventsystem/zipball/8c2afb4e578a616a289aa04f664d62aab95dbfe8",
+                "reference": "8c2afb4e578a616a289aa04f664d62aab95dbfe8",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "default-branch": true,
+            "type": "moodle-theme",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl"
+                }
+            ],
+            "description": "H5PEventSystem is a theme that provides the possibility to attach events to h5p-content",
+            "keywords": [
+                "html",
+                "moodle",
+                "theme"
+            ],
+            "support": {
+                "source": "https://github.com/null/moodle-theme_h5peventsystem/tree/master",
+                "issues": "https://github.com/null/moodle-theme_h5peventsystem/issues"
+            },
+            "time": "2022-10-05T12:21:54+00:00"
+        },
+        {
+            "name": "null/nos",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/null/moodle-theme_nos.git",
+                "reference": "997e62d5a8b24436a4cd076a1d8d0f97995a78dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/null/moodle-theme_nos/zipball/997e62d5a8b24436a4cd076a1d8d0f97995a78dc",
+                "reference": "997e62d5a8b24436a4cd076a1d8d0f97995a78dc",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "moodle-an-hochschulen/boost_union": "dev-master",
+                "null/contentmodifier": "dev-master",
+                "null/h5peventsystem": "dev-master",
+                "php": "^7.4 || ^8.0"
+            },
+            "default-branch": true,
+            "type": "moodle-theme",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl"
+                }
+            ],
+            "description": "A theme for ml.",
+            "keywords": [
+                "moodle",
+                "theme"
+            ],
+            "support": {
+                "source": "https://github.com/null/moodle-theme_nos/tree/master",
+                "issues": "https://github.com/null/moodle-theme_nos/issues"
+            },
+            "time": "2022-10-05T12:55:23+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "adapta/modcustomfields": 20,
+        "null/contentmodifier": 20,
+        "null/h5peventsystem": 20,
+        "null/nos": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.4.21"
+    },
+    "plugin-api-version": "2.3.0"
+}
