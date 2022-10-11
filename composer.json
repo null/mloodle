@@ -47,11 +47,28 @@
                     "composer/installers": "~1.0"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "andrewhancox/moodle-customfield_file",
+                "type": "moodle-customfield",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/andrewhancox/moodle-customfield_file",
+                    "type": "git",
+                    "reference": "main"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
         }
     ],
     "require": {
         "moodle/moodle": "v4.*",
         "adapta/modcustomfields": "dev-master",
+        "andrewhancox/moodle-customfield_file": "dev-master",
         "null/contentmodifier": "dev-master",
         "null/h5peventsystem": "dev-master",
         "null/nos": "dev-master"
@@ -72,6 +89,9 @@
             ],
             "vendor/moodle/moodle/local/{$name}": [
                 "type:moodle-local"
+            ],
+            "vendor/moodle/moodle/customfield/field/{$name}": [
+                "type:moodle-customfield"
             ]
         }
     }

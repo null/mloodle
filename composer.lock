@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "55e57344693b8e3363edaad734ffbc85",
+    "content-hash": "51f1af6ccef12921761bf2a9de349c2f",
     "packages": [
         {
             "name": "adapta/modcustomfields",
@@ -18,6 +18,19 @@
                 "composer/installers": "~1.0"
             },
             "type": "moodle-local"
+        },
+        {
+            "name": "andrewhancox/moodle-customfield_file",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrewhancox/moodle-customfield_file",
+                "reference": "main"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "moodle-customfield"
         },
         {
             "name": "composer/installers",
@@ -394,6 +407,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "adapta/modcustomfields": 20,
+        "andrewhancox/moodle-customfield_file": 20,
         "null/contentmodifier": 20,
         "null/h5peventsystem": 20,
         "null/nos": 20
@@ -405,5 +419,5 @@
     "platform-overrides": {
         "php": "7.4.21"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
