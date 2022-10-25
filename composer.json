@@ -15,7 +15,12 @@
         {
             "type": "vcs",
             "url": "https://github.com/null/moodle-theme_nos.git"
+        }, 
+        {
+            "type": "vcs",
+            "url": "https://github.com/null/moodle-local_pdfjsrenderer.git"
         },
+
         {
             "type": "package",
             "package": {
@@ -71,7 +76,9 @@
         "andrewhancox/moodle-customfield_file": "dev-master",
         "null/contentmodifier": "dev-master",
         "null/h5peventsystem": "dev-master",
-        "null/nos": "dev-master"
+        "null/nos": "dev-master",
+        "null/pdfjsrenderer": "dev-master"
+
     },
     "config": {
         "platform": {

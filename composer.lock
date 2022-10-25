@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51f1af6ccef12921761bf2a9de349c2f",
+    "content-hash": "ccf8edc2a8e8ee89f81a268c2d506217",
     "packages": [
         {
             "name": "adapta/modcustomfields",
@@ -400,6 +400,47 @@
                 "issues": "https://github.com/null/moodle-theme_nos/issues"
             },
             "time": "2022-10-05T12:55:23+00:00"
+        },
+        {
+            "name": "null/pdfjsrenderer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/null/moodle-local_pdfjsrenderer.git",
+                "reference": "5065ec7581d76d26941948fbdccf454cca6fb4af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/null/moodle-local_pdfjsrenderer/zipball/5065ec7581d76d26941948fbdccf454cca6fb4af",
+                "reference": "5065ec7581d76d26941948fbdccf454cca6fb4af",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "default-branch": true,
+            "type": "moodle-local",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl"
+                }
+            ],
+            "description": "This is an JS-API-Plugin. It does nothing by itself. Is used for rendering PDFs",
+            "keywords": [
+                "api",
+                "moodle",
+                "pdf",
+                "pdfjs"
+            ],
+            "support": {
+                "source": "https://github.com/null/moodle-local_pdfjsrenderer/tree/master",
+                "issues": "https://github.com/null/moodle-local_pdfjsrenderer/issues"
+            },
+            "time": "2022-10-25T08:59:13+00:00"
         }
     ],
     "packages-dev": [],
@@ -410,7 +451,8 @@
         "andrewhancox/moodle-customfield_file": 20,
         "null/contentmodifier": 20,
         "null/h5peventsystem": 20,
-        "null/nos": 20
+        "null/nos": 20,
+        "null/pdfjsrenderer": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
