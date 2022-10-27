@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccf8edc2a8e8ee89f81a268c2d506217",
+    "content-hash": "7d5d36e3f92cd170bb96fb81f62c41b2",
     "packages": [
         {
             "name": "adapta/modcustomfields",
@@ -15,57 +15,57 @@
                 "reference": "main"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*"
             },
             "type": "moodle-local"
         },
         {
-            "name": "andrewhancox/moodle-customfield_file",
+            "name": "andrewhancox/file",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/andrewhancox/moodle-customfield_file",
+                "url": "https://github.com/andrewhancox/moodle-customfield_file.git",
                 "reference": "main"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*"
             },
             "type": "moodle-customfield"
         },
         {
             "name": "composer/installers",
-            "version": "1.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "894a0b5c5d34c88b69b097f2aae1439730fa6836"
+                "reference": "2a9170263fcd9cc4fd0b50917293c21d6c1a5bfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/894a0b5c5d34c88b69b097f2aae1439730fa6836",
-                "reference": "894a0b5c5d34c88b69b097f2aae1439730fa6836",
+                "url": "https://api.github.com/repos/composer/installers/zipball/2a9170263fcd9cc4fd0b50917293c21d6c1a5bfe",
+                "reference": "2a9170263fcd9cc4fd0b50917293c21d6c1a5bfe",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 || ^2.0"
-            },
-            "replace": {
-                "roundcube/plugin-installer": "*",
-                "shama/baton": "*"
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
             },
             "require-dev": {
                 "composer/composer": "1.6.* || ^2.0",
                 "composer/semver": "^1 || ^3",
                 "phpstan/phpstan": "^0.12.55",
                 "phpstan/phpstan-phpunit": "^0.12.16",
-                "symfony/phpunit-bridge": "^4.2 || ^5",
-                "symfony/process": "^2.3"
+                "symfony/phpunit-bridge": "^5.3",
+                "symfony/process": "^5"
             },
+            "default-branch": true,
             "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
-                    "dev-main": "1.x-dev"
+                    "dev-main": "2.x-dev"
                 },
                 "plugin-modifies-install-path": true
             },
@@ -88,7 +88,6 @@
             "description": "A multi-framework Composer library installer",
             "homepage": "https://composer.github.io/installers/",
             "keywords": [
-                "Craft",
                 "Dolibarr",
                 "Eliasis",
                 "Hurad",
@@ -109,7 +108,6 @@
                 "Whmcs",
                 "WolfCMS",
                 "agl",
-                "aimeos",
                 "annotatecms",
                 "attogram",
                 "bitrix",
@@ -128,7 +126,6 @@
                 "grav",
                 "installer",
                 "itop",
-                "joomla",
                 "known",
                 "kohana",
                 "laravel",
@@ -137,6 +134,7 @@
                 "magento",
                 "majima",
                 "mako",
+                "matomo",
                 "mediawiki",
                 "miaoxing",
                 "modulework",
@@ -156,9 +154,7 @@
                 "silverstripe",
                 "sydes",
                 "sylius",
-                "symfony",
                 "tastyigniter",
-                "typo3",
                 "wordpress",
                 "yawik",
                 "zend",
@@ -166,7 +162,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/installers/issues",
-                "source": "https://github.com/composer/installers/tree/1.x"
+                "source": "https://github.com/composer/installers/tree/main"
             },
             "funding": [
                 {
@@ -182,18 +178,19 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-15T21:23:54+00:00"
+            "time": "2022-10-12T12:07:30+00:00"
         },
         {
             "name": "moodle-an-hochschulen/boost_union",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union",
+                "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union.git",
                 "reference": "master"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*"
             },
             "type": "moodle-theme"
         },
@@ -254,11 +251,7 @@
                 "ext-xmlrpc": "Enabling XMLRPC PHP extension is useful for web services and Moodle networking."
             },
             "type": "project",
-            "autoload-dev": {
-                "psr-0": {
-                    "Moodle\\BehatExtension": "lib/behat/extension/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -269,12 +262,11 @@
             },
             "funding": [
                 {
-                    "type": "custom",
-                    "url": "https://moodle.com/donations/"
+                    "type": "custom"
                 },
                 {
-                    "type": "custom",
-                    "url": "moodle.org"
+                    "url": "https://moodle.com/donations/",
+                    "type": "custom"
                 }
             ],
             "time": "2022-09-10T10:15:57+00:00"
@@ -285,16 +277,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/null/moodle-theme_contentmodifier.git",
-                "reference": "b29b2cb140dcc7f2c0e0e17537aeb48f67475271"
+                "reference": "d9fe2dcf8d74f527511130f6bdec5b2f3ed87cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/null/moodle-theme_contentmodifier/zipball/b29b2cb140dcc7f2c0e0e17537aeb48f67475271",
-                "reference": "b29b2cb140dcc7f2c0e0e17537aeb48f67475271",
+                "url": "https://api.github.com/repos/null/moodle-theme_contentmodifier/zipball/d9fe2dcf8d74f527511130f6bdec5b2f3ed87cf3",
+                "reference": "d9fe2dcf8d74f527511130f6bdec5b2f3ed87cf3",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.0",
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*",
                 "php": "^7.4 || ^8.0"
             },
             "default-branch": true,
@@ -317,7 +310,7 @@
                 "source": "https://github.com/null/moodle-theme_contentmodifier/tree/master",
                 "issues": "https://github.com/null/moodle-theme_contentmodifier/issues"
             },
-            "time": "2022-10-05T12:20:42+00:00"
+            "time": "2022-10-27T13:34:42+00:00"
         },
         {
             "name": "null/h5peventsystem",
@@ -325,16 +318,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/null/moodle-theme_h5peventsystem.git",
-                "reference": "8c2afb4e578a616a289aa04f664d62aab95dbfe8"
+                "reference": "abb3469e8ccca2756553af021e7ff637ec248b5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/null/moodle-theme_h5peventsystem/zipball/8c2afb4e578a616a289aa04f664d62aab95dbfe8",
-                "reference": "8c2afb4e578a616a289aa04f664d62aab95dbfe8",
+                "url": "https://api.github.com/repos/null/moodle-theme_h5peventsystem/zipball/abb3469e8ccca2756553af021e7ff637ec248b5a",
+                "reference": "abb3469e8ccca2756553af021e7ff637ec248b5a",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.0",
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*",
                 "php": "^7.4 || ^8.0"
             },
             "default-branch": true,
@@ -357,7 +351,7 @@
                 "source": "https://github.com/null/moodle-theme_h5peventsystem/tree/master",
                 "issues": "https://github.com/null/moodle-theme_h5peventsystem/issues"
             },
-            "time": "2022-10-05T12:21:54+00:00"
+            "time": "2022-10-27T13:33:56+00:00"
         },
         {
             "name": "null/nos",
@@ -365,20 +359,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/null/moodle-theme_nos.git",
-                "reference": "997e62d5a8b24436a4cd076a1d8d0f97995a78dc"
+                "reference": "21ba7676db1cd084b598737718275165b914d1d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/null/moodle-theme_nos/zipball/997e62d5a8b24436a4cd076a1d8d0f97995a78dc",
-                "reference": "997e62d5a8b24436a4cd076a1d8d0f97995a78dc",
+                "url": "https://api.github.com/repos/null/moodle-theme_nos/zipball/21ba7676db1cd084b598737718275165b914d1d9",
+                "reference": "21ba7676db1cd084b598737718275165b914d1d9",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.0",
+                "composer/installers": "~2.2",
                 "moodle-an-hochschulen/boost_union": "dev-master",
+                "moodle/moodle": "v4.*",
                 "null/contentmodifier": "dev-master",
-                "null/h5peventsystem": "dev-master",
-                "php": "^7.4 || ^8.0"
+                "null/h5peventsystem": "dev-master"
             },
             "default-branch": true,
             "type": "moodle-theme",
@@ -399,7 +393,7 @@
                 "source": "https://github.com/null/moodle-theme_nos/tree/master",
                 "issues": "https://github.com/null/moodle-theme_nos/issues"
             },
-            "time": "2022-10-05T12:55:23+00:00"
+            "time": "2022-10-27T13:31:52+00:00"
         },
         {
             "name": "null/pdfjsrenderer",
@@ -407,16 +401,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/null/moodle-local_pdfjsrenderer.git",
-                "reference": "5065ec7581d76d26941948fbdccf454cca6fb4af"
+                "reference": "344e28d3c6495e479d46512c1d3b4dc4ad65a904"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/null/moodle-local_pdfjsrenderer/zipball/5065ec7581d76d26941948fbdccf454cca6fb4af",
-                "reference": "5065ec7581d76d26941948fbdccf454cca6fb4af",
+                "url": "https://api.github.com/repos/null/moodle-local_pdfjsrenderer/zipball/344e28d3c6495e479d46512c1d3b4dc4ad65a904",
+                "reference": "344e28d3c6495e479d46512c1d3b4dc4ad65a904",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.0",
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*",
                 "php": "^7.4 || ^8.0"
             },
             "default-branch": true,
@@ -440,7 +435,7 @@
                 "source": "https://github.com/null/moodle-local_pdfjsrenderer/tree/master",
                 "issues": "https://github.com/null/moodle-local_pdfjsrenderer/issues"
             },
-            "time": "2022-10-25T08:59:13+00:00"
+            "time": "2022-10-27T13:33:23+00:00"
         }
     ],
     "packages-dev": [],
@@ -448,7 +443,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "adapta/modcustomfields": 20,
-        "andrewhancox/moodle-customfield_file": 20,
+        "moodle-an-hochschulen/boost_union": 20,
+        "andrewhancox/file": 20,
         "null/contentmodifier": 20,
         "null/h5peventsystem": 20,
         "null/nos": 20,

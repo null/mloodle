@@ -1,10 +1,7 @@
 {
+    "name": "null/mloodle",
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/moodle/moodle.git"
-        },
-        {
+    	{
             "type": "vcs",
             "url": "https://github.com/null/moodle-theme_contentmodifier.git"
         },
@@ -33,10 +30,11 @@
                     "reference": "main"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.2",
+                    "moodle/moodle": "v4.*"
                 }
             }
-        },
+        }, 
         {
             "type": "package",
             "package": {
@@ -44,36 +42,39 @@
                 "type": "moodle-theme",
                 "version": "dev-master",
                 "source": {
-                    "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union",
+                    "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union.git",
                     "type": "git",
                     "reference": "master"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.2",
+                    "moodle/moodle": "v4.*"
                 }
             }
         },
         {
             "type": "package",
             "package": {
-                "name": "andrewhancox/moodle-customfield_file",
+                "name": "andrewhancox/file",
                 "type": "moodle-customfield",
                 "version": "dev-master",
                 "source": {
-                    "url": "https://github.com/andrewhancox/moodle-customfield_file",
+                    "url": "https://github.com/andrewhancox/moodle-customfield_file.git",
                     "type": "git",
                     "reference": "main"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.2",
+                    "moodle/moodle": "v4.*"
                 }
             }
         }
     ],
     "require": {
-        "moodle/moodle": "v4.*",
+	"moodle/moodle": "v4.*",
         "adapta/modcustomfields": "dev-master",
-        "andrewhancox/moodle-customfield_file": "dev-master",
+        "moodle-an-hochschulen/boost_union": "dev-master",
+        "andrewhancox/file": "dev-master",
         "null/contentmodifier": "dev-master",
         "null/h5peventsystem": "dev-master",
         "null/nos": "dev-master",
@@ -91,15 +92,9 @@
     "minimum-stability": "dev",
     "extra": {
         "installer-paths": {
-            "vendor/moodle/moodle/theme/{$name}": [
-                "type:moodle-theme"
-            ],
-            "vendor/moodle/moodle/local/{$name}": [
-                "type:moodle-local"
-            ],
-            "vendor/moodle/moodle/customfield/field/{$name}": [
-                "type:moodle-customfield"
-            ]
+            "vendor/moodle/moodle/theme/{$name}": ["type:moodle-theme"],
+            "vendor/moodle/moodle/local/{$name}": ["type:moodle-local"],
+            "vendor/moodle/moodle/customfield/field/{$name}": ["type:moodle-customfield"]
         }
     }
 }
