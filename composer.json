@@ -1,7 +1,7 @@
 {
     "name": "null/mloodle",
     "repositories": [
-    	{
+        {
             "type": "vcs",
             "url": "https://github.com/null/moodle-theme_contentmodifier.git"
         },
@@ -12,12 +12,19 @@
         {
             "type": "vcs",
             "url": "https://github.com/null/moodle-theme_nos.git"
-        }, 
+        },
         {
             "type": "vcs",
             "url": "https://github.com/null/moodle-local_pdfjsrenderer.git"
         },
-
+        {
+            "type": "path",
+            "url": "vendor_development/null/pdffieldrenderer"
+        },
+        {
+            "type": "path",
+            "url": "vendor_development/null/moodle-customfield_file"
+        },
         {
             "type": "package",
             "package": {
@@ -34,7 +41,7 @@
                     "moodle/moodle": "v4.*"
                 }
             }
-        }, 
+        },
         {
             "type": "package",
             "package": {
@@ -68,18 +75,38 @@
                     "moodle/moodle": "v4.*"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "moodlehq/codechecker",
+                "type": "moodle-local",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/moodlehq/moodle-local_codechecker.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "require": {
+                    "composer/installers": "~2.2",
+                    "moodle/moodle": "v4.*"
+                }
+            }
         }
     ],
     "require": {
-	"moodle/moodle": "v4.*",
+        "moodle/moodle": "v4.*",
         "adapta/modcustomfields": "dev-master",
         "moodle-an-hochschulen/boost_union": "dev-master",
-        "andrewhancox/file": "dev-master",
-        "null/contentmodifier": "dev-master",
-        "null/h5peventsystem": "dev-master",
-        "null/nos": "dev-master",
-        "null/pdfjsrenderer": "dev-master"
-
+        "null/contentmodifier": "v1.*",
+        "null/h5peventsystem": "v1.*",
+        "null/nos": "v1.0-alpha1",
+        "null/pdfjsrenderer": "dev-master",
+        "null/pdffieldrenderer": "dev-master",
+        "andrewhancox/file": "v4.*"
+    },
+    "require-dev": {
+        "moodlehq/codechecker": "*"
     },
     "config": {
         "platform": {
@@ -92,9 +119,15 @@
     "minimum-stability": "dev",
     "extra": {
         "installer-paths": {
-            "vendor/moodle/moodle/theme/{$name}": ["type:moodle-theme"],
-            "vendor/moodle/moodle/local/{$name}": ["type:moodle-local"],
-            "vendor/moodle/moodle/customfield/field/{$name}": ["type:moodle-customfield"]
+            "vendor/moodle/moodle/theme/{$name}": [
+                "type:moodle-theme"
+            ],
+            "vendor/moodle/moodle/local/{$name}": [
+                "type:moodle-local"
+            ],
+            "vendor/moodle/moodle/customfield/field/{$name}": [
+                "type:moodle-customfield"
+            ]
         }
     }
 }

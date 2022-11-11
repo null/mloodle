@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d5d36e3f92cd170bb96fb81f62c41b2",
+    "content-hash": "669d43c776d7baf0ca90c4fc3f8cc311",
     "packages": [
         {
             "name": "adapta/modcustomfields",
@@ -22,17 +22,24 @@
         },
         {
             "name": "andrewhancox/file",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/andrewhancox/moodle-customfield_file.git",
-                "reference": "main"
+            "version": "v4.0.4",
+            "dist": {
+                "type": "path",
+                "url": "vendor_development/null/moodle-customfield_file",
+                "reference": "224c51337e9704b013bb42eec52562f64f479697"
             },
             "require": {
                 "composer/installers": "~2.2",
                 "moodle/moodle": "v4.*"
             },
-            "type": "moodle-customfield"
+            "type": "moodle-customfield",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "A custom field to attach files to entities in Moodle",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "composer/installers",
@@ -273,16 +280,16 @@
         },
         {
             "name": "null/contentmodifier",
-            "version": "dev-master",
+            "version": "v1.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/null/moodle-theme_contentmodifier.git",
-                "reference": "d9fe2dcf8d74f527511130f6bdec5b2f3ed87cf3"
+                "reference": "9ddb163f11077f338b966ccc48b74adfb0d5cf1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/null/moodle-theme_contentmodifier/zipball/d9fe2dcf8d74f527511130f6bdec5b2f3ed87cf3",
-                "reference": "d9fe2dcf8d74f527511130f6bdec5b2f3ed87cf3",
+                "url": "https://api.github.com/repos/null/moodle-theme_contentmodifier/zipball/9ddb163f11077f338b966ccc48b74adfb0d5cf1a",
+                "reference": "9ddb163f11077f338b966ccc48b74adfb0d5cf1a",
                 "shasum": ""
             },
             "require": {
@@ -290,7 +297,6 @@
                 "moodle/moodle": "v4.*",
                 "php": "^7.4 || ^8.0"
             },
-            "default-branch": true,
             "type": "moodle-theme",
             "license": [
                 "GPLv3"
@@ -300,30 +306,30 @@
                     "name": "Bernhard Strehl"
                 }
             ],
-            "description": "A theme that enables other themes or plugin to modify moodle's html-output.",
+            "description": "A theme that enables other themes or plugin to modify moodle's html-output and gives modules the possibility to override renderers.",
             "keywords": [
                 "html",
                 "moodle",
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/null/moodle-theme_contentmodifier/tree/master",
+                "source": "https://github.com/null/moodle-theme_contentmodifier/tree/v1.0-alpha1",
                 "issues": "https://github.com/null/moodle-theme_contentmodifier/issues"
             },
-            "time": "2022-10-27T13:34:42+00:00"
+            "time": "2022-11-11T13:09:22+00:00"
         },
         {
             "name": "null/h5peventsystem",
-            "version": "dev-master",
+            "version": "v1.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/null/moodle-theme_h5peventsystem.git",
-                "reference": "abb3469e8ccca2756553af021e7ff637ec248b5a"
+                "reference": "2312d4e7fb464c0dc79f6084f663b06b7e156748"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/null/moodle-theme_h5peventsystem/zipball/abb3469e8ccca2756553af021e7ff637ec248b5a",
-                "reference": "abb3469e8ccca2756553af021e7ff637ec248b5a",
+                "url": "https://api.github.com/repos/null/moodle-theme_h5peventsystem/zipball/2312d4e7fb464c0dc79f6084f663b06b7e156748",
+                "reference": "2312d4e7fb464c0dc79f6084f663b06b7e156748",
                 "shasum": ""
             },
             "require": {
@@ -331,14 +337,14 @@
                 "moodle/moodle": "v4.*",
                 "php": "^7.4 || ^8.0"
             },
-            "default-branch": true,
             "type": "moodle-theme",
             "license": [
                 "GPLv3"
             ],
             "authors": [
                 {
-                    "name": "Bernhard Strehl"
+                    "name": "Bernhard Strehl",
+                    "role": "Developer"
                 }
             ],
             "description": "H5PEventSystem is a theme that provides the possibility to attach events to h5p-content",
@@ -348,33 +354,33 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/null/moodle-theme_h5peventsystem/tree/master",
+                "email": "moodle@software.bernhard-strehl.de",
+                "source": "https://github.com/null/moodle-theme_h5peventsystem/tree/v1.0-alpha1",
                 "issues": "https://github.com/null/moodle-theme_h5peventsystem/issues"
             },
-            "time": "2022-10-27T13:33:56+00:00"
+            "time": "2022-11-11T13:10:09+00:00"
         },
         {
             "name": "null/nos",
-            "version": "dev-master",
+            "version": "v1.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/null/moodle-theme_nos.git",
-                "reference": "21ba7676db1cd084b598737718275165b914d1d9"
+                "reference": "b27b424fae63e294e42ed810fe6834703a443a21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/null/moodle-theme_nos/zipball/21ba7676db1cd084b598737718275165b914d1d9",
-                "reference": "21ba7676db1cd084b598737718275165b914d1d9",
+                "url": "https://api.github.com/repos/null/moodle-theme_nos/zipball/b27b424fae63e294e42ed810fe6834703a443a21",
+                "reference": "b27b424fae63e294e42ed810fe6834703a443a21",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~2.2",
                 "moodle-an-hochschulen/boost_union": "dev-master",
                 "moodle/moodle": "v4.*",
-                "null/contentmodifier": "dev-master",
-                "null/h5peventsystem": "dev-master"
+                "null/contentmodifier": "v1.*",
+                "null/h5peventsystem": "v1.*"
             },
-            "default-branch": true,
             "type": "moodle-theme",
             "license": [
                 "GPLv3"
@@ -390,10 +396,42 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/null/moodle-theme_nos/tree/master",
+                "source": "https://github.com/null/moodle-theme_nos/tree/v1.0-alpha1",
                 "issues": "https://github.com/null/moodle-theme_nos/issues"
             },
-            "time": "2022-10-27T13:31:52+00:00"
+            "time": "2022-11-11T13:07:09+00:00"
+        },
+        {
+            "name": "null/pdffieldrenderer",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "vendor_development/null/pdffieldrenderer",
+                "reference": "2e1608faf9b33c812baa509566eaae40ab26ab4d"
+            },
+            "require": {
+                "composer/installers": "~2.2",
+                "php": "^7.4 || ^8.0"
+            },
+            "type": "moodle-local",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl"
+                }
+            ],
+            "description": "If you define a custom field 'file' and it holds a PDF, it can be rendered using this plugin",
+            "keywords": [
+                "custom field",
+                "moodle",
+                "pdf",
+                "pdfjs"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "null/pdfjsrenderer",
@@ -401,12 +439,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/null/moodle-local_pdfjsrenderer.git",
-                "reference": "344e28d3c6495e479d46512c1d3b4dc4ad65a904"
+                "reference": "3cc4b039e58aff3a7968459bd592e6533173a04d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/null/moodle-local_pdfjsrenderer/zipball/344e28d3c6495e479d46512c1d3b4dc4ad65a904",
-                "reference": "344e28d3c6495e479d46512c1d3b4dc4ad65a904",
+                "url": "https://api.github.com/repos/null/moodle-local_pdfjsrenderer/zipball/3cc4b039e58aff3a7968459bd592e6533173a04d",
+                "reference": "3cc4b039e58aff3a7968459bd592e6533173a04d",
                 "shasum": ""
             },
             "require": {
@@ -435,20 +473,32 @@
                 "source": "https://github.com/null/moodle-local_pdfjsrenderer/tree/master",
                 "issues": "https://github.com/null/moodle-local_pdfjsrenderer/issues"
             },
-            "time": "2022-10-27T13:33:23+00:00"
+            "time": "2022-10-28T11:38:38+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "moodlehq/codechecker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moodlehq/moodle-local_codechecker.git",
+                "reference": "master"
+            },
+            "require": {
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*"
+            },
+            "type": "moodle-local"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "adapta/modcustomfields": 20,
         "moodle-an-hochschulen/boost_union": 20,
-        "andrewhancox/file": 20,
-        "null/contentmodifier": 20,
-        "null/h5peventsystem": 20,
-        "null/nos": 20,
-        "null/pdfjsrenderer": 20
+        "null/pdfjsrenderer": 20,
+        "null/pdffieldrenderer": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
